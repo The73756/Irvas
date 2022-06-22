@@ -1804,6 +1804,11 @@ textarea:focus {
   }
 }
 
+.disable-scroll {
+  overflow: hidden;
+  margin-right: calc(17px - (100vw - 100%));
+}
+
 /* small devices, tablets */
 @media only screen and (max-width: 768px) {
   .animated {
@@ -1817,4 +1822,10 @@ textarea:focus {
     -webkit-animation: none !important;
     animation: none !important;
   }
+
+  .disable-scroll {
+    margin-right: 0 !important;
+  }
 }
+
+

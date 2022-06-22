@@ -10,7 +10,8 @@
   "license": "ISC",
   "browserslist": [
     "> 1%",
-    "not dead"
+    "not dead",
+    "ie 11"
   ],
   "devDependencies": {
     "@babel/core": "^7.7.4",
@@ -23,5 +24,9 @@
     "gulp": "^4.0.2",
     "webpack": "^4.41.2",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
   }
 }
