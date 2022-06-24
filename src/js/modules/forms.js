@@ -47,6 +47,19 @@ const forms = (state) => {
 				.then(res => {
 					console.log(res);
 					statusMessage.textContent = message.success;
+
+					if (el.getAttribute('data-calc') === 'end') {
+						setTimeout(() => {
+							const modals = document.querySelectorAll('[data-modal]');
+							modals.forEach(el => {
+								el.style.display = 'none';
+							});
+						}, 5000);
+					}
+
+					for (var key in state) {
+						delete state[key];
+					}
 				})
 				.catch(res => {
 					statusMessage.textContent = message.failure;
