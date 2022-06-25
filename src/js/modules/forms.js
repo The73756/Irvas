@@ -53,6 +53,7 @@ const forms = (state) => {
 							const modals = document.querySelectorAll('[data-modal]');
 							modals.forEach(el => {
 								el.style.display = 'none';
+								document.body.classList.remove('disable-scroll');
 							});
 						}, 5000);
 					}

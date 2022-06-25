@@ -4,6 +4,7 @@ import tabs from "./modules/tabs";
 import forms from "./modules/forms";
 import changeModalState from "./modules/changeModalState";
 import timer from "./modules/timer";
+import lightbox from "./modules/lightbox";
 
 window.addEventListener("DOMContentLoaded", () => {
 
@@ -17,4 +18,5 @@ window.addEventListener("DOMContentLoaded", () => {
 	forms(modalState);
 	changeModalState(modalState);
 	timer('#timer', deadline);
+	lightbox('.works', 'preview');
 });
