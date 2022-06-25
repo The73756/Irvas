@@ -18,6 +18,11 @@ body {
   color: red;
 }
 
+.tabs-fade{
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -1832,6 +1837,8 @@ textarea:focus {
 .lightbox-show {
   opacity: 1;
   visibility: visible;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 }
 
 /* small devices, tablets */
